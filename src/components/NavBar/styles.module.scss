@@ -24,7 +24,7 @@
     width: 90px;
     height: 20px;
 
-    @media screen and (min-width: 2000px) {
+    @media screen and (min-width: 1280px) {
       width: 180px;
       height: 40px;
     }
@@ -34,7 +34,7 @@
 .app__navbar_links {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
 
@@ -71,7 +71,7 @@
     }
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -154,12 +154,12 @@
       }
     }
 
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 767px) {
       display: none;
     }
   }
   
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
 }
