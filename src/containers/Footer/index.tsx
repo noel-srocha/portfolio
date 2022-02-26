@@ -1,7 +1,8 @@
+import React from 'react';
 import './styles.module.scss';
 
-const Footer = () => (
-  <div>About</div>
-);
-
-export default Footer;
+export default function Footer() {
+  return (
+    <div>About</div>
+  );
+}

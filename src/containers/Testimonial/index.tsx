@@ -1,7 +1,8 @@
+import React from 'react';
 import './styles.module.scss';
 
-const Testimonial = () => (
-  <div>Testimonials</div>
-);
-
-export default Testimonial;
+export default function Testimonial() {
+  return (
+    <div>Testimonials</div>
+  );
+}

@@ -1,7 +1,8 @@
+import React from 'react';
 import './styles.module.scss';
 
-const About = () => (
-  <div>About</div>
-);
-
-export default About;
+export default function About() {
+  return (
+    <div>About</div>
+  );
+}
