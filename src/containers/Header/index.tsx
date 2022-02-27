@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
+import { AppWrap } from '../../wrapper';
 import styles from './styles.module.scss';
 
 const scaleVariants = {
@@ -14,9 +15,9 @@ const scaleVariants = {
   },
 };
 
-export default function Header() {
+function Header() {
   return (
-    <div className={`${styles.home} ${styles.app__header} app__flex`}>
+    <div className={`${styles.app__header} app__flex`}>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
@@ -67,3 +68,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default AppWrap(Header, 'home');

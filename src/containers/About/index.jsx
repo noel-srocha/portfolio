@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 import styles from './styles.module.scss';
 
 import { urlFor, client } from '../../client';
+import { AppWrap } from '../../wrapper';
 
-export default function About() {
+function About() {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
@@ -46,3 +47,5 @@ export default function About() {
     </>
   );
 }
+
+export default AppWrap(About, 'about');
