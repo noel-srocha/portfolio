@@ -1,4 +1,4 @@
-.home {
+.home:global(#home) {
   position: relative;
   background: url('../../assets/bgIMG.png');
   background-size: cover;
@@ -22,13 +22,13 @@
 
   padding: 6rem 2rem 0;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 2000px) {
     padding-top: 8rem;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     flex-direction: column;
   }
-  @media screen and (min-width: 300px) {
+  @media screen and (min-width: 450px) {
     padding: 6rem 1rem 2rem;
   }
 }
@@ -41,7 +41,7 @@
   align-items: flex-start;
   height: 100%;
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 2000px) {
     width: 100%;
     margin-right: 0rem;
   }
@@ -77,12 +77,12 @@
   span {
     font-size: 2.5rem;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 2000px) {
       font-size: 5rem;
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -125,22 +125,22 @@
     height: 70px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 2000px) {
     div:nth-child(1) {
-      width: 200px;
-      height: 200px;
-    }
-    div:nth-child(2) {
       width: 400px;
       height: 400px;
     }
-    div:nth-child(3) {
+    div:nth-child(2) {
       width: 170px;
       height: 170px;
     }
+    div:nth-child(3) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -178,7 +178,7 @@
     height: 90%;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     margin: 2rem 0;
   }
 }

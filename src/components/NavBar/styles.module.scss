@@ -24,7 +24,7 @@
     width: 90px;
     height: 20px;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 2000px) {
       width: 180px;
       height: 40px;
     }
@@ -71,7 +71,7 @@
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 }
@@ -154,12 +154,12 @@
       }
     }
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 900px) {
       display: none;
     }
   }
   
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 900px) {
     display: none;
   }
 }
