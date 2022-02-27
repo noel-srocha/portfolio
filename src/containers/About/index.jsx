@@ -2,32 +2,23 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './styles.module.scss';
 
-import { images } from '../../constants';
-
-const abouts = [
-  {
-    title: 'Front-End Development',
-    description: 'I\'m a good front-end web developer.',
-    imageUrl: images.about01,
-  },
-  {
-    title: 'Leadership',
-    description: 'I inspire others to be batter than they already are.',
-    imageUrl: images.about02,
-  },
-  {
-    title: 'Highly Adaptable',
-    description: 'It\'s a habit of mine to keep studying new technologies and tools to add to my belt.',
-    imageUrl: images.about03,
-  },
-];
+import { urlFor, client } from '../../client';
 
 export default function About() {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query)
+      .then((data) => setAbouts(data));
+  }, []);
+
   return (
     <>
       <h2 className="head-text">
         I know That
-        <span>Good Design </span>
+        <span> Good Design </span>
         <br />
         means
         <span> Good Business</span>
@@ -42,7 +33,7 @@ export default function About() {
             // eslint-disable-next-line react/no-array-index-key
             key={about.title + index}
           >
-            <img src={about.imageUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
