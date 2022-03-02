@@ -24,7 +24,7 @@ function Skills() {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experience</h2>
+      <h2 className="head-text">Skills & Experiences</h2>
       <div className={styles.app__skills_container}>
         <motion.div
           className={styles.app__skills_list}
