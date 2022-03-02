@@ -34,13 +34,17 @@ function Testimonial() {
 
   return (
     <>
+      <h2 className="head-text">
+        What people say
+        <span> about me</span>
+      </h2>
       {testimonials.length && (
         <>
           <div
             className={`${styles.app__testimonial_item} app__flex`}
           >
             {/* <img
-              src={urlFor(test.imgurl)}
+              src={urlFor(test.imgUrl)}
               alt="testimonial"
             /> */}
             <div className={styles.app__testimonial_content}>
@@ -48,6 +52,7 @@ function Testimonial() {
               <div>
                 <h4 className="bold-text">{test.name}</h4>
                 <h5 className="p-text">{test.company}</h5>
+                <h6 className="p-text">{test.source}</h6>
               </div>
             </div>
           </div>

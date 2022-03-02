@@ -15,7 +15,7 @@ export default function NavigationDots({ active }: NavigationDotsProps) {
           // eslint-disable-next-line react/no-array-index-key
           key={item + index}
           className="app__navigation-dot"
-          style={active === item ? { backgroundColor: '#313BAC' } : { }}
+          style={active === item ? { backgroundColor: '#0077b6' } : { }}
         />
       ))}
     </div>

@@ -33,7 +33,7 @@ function Header() {
           </div>
           <div className={`${styles.tag_cmp} app__flex`}>
             <p className="p-text">Web Developer</p>
-            <p className="p-text">React/Vue Developer</p>
+            <p className="p-text">React/Vue Specialist</p>
           </div>
         </div>
       </motion.div>

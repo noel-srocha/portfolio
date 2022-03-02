@@ -41,7 +41,10 @@ function Footer() {
 
   return (
     <>
-      <h2 className="head-text"> Take a coffee and chat with me</h2>
+      <h2 className="head-text">
+        Grab a drink and
+        <span> let&apos;s talk</span>
+      </h2>
       <div className={styles.app__footer_cards}>
         <div className={styles.app__footer_card}>
           <img src={images.email} alt="email" />
@@ -114,5 +117,5 @@ function Footer() {
 export default AppWrap(
   MotionWrap(Footer, 'app__contact'),
   'contact',
-  'app__whitebg',
+  'app__darkGraybg',
 );

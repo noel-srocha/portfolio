@@ -5,10 +5,11 @@
 }
 
 .app__testimonial_item {
+  margin-top: 4rem;
   width: 60%;
   min-height: 320px;
   
-  background-color: var(--white-color);
+  background-color: var(--lightGray-color);
   
   display: flex;
   padding: 2rem;
@@ -22,6 +23,10 @@
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px rgba($color: #fff, $alpha: 0.9);
   }
 
   @media screen and (min-width: 2000px) {
@@ -58,21 +63,32 @@
     font-size: 1.25rem;
     line-height: 2rem;
     color: var(--black-color);
+    text-align: justify;
 
     font-family: var(--font-base);
   }
 
   h4 {
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 1.15rem;
     color: var(--secondary-color);
     margin-top: 2rem;
   }
 
   h5 {
-    font-weight: 400;
-    color: var(--gray-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--black-color);
     margin-top: 5px;
   }
+
+  h6 {
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--black-color);
+    margin-top: 5px;
+  }
+
 }
 
 .app__testimonial_btns {
@@ -83,7 +99,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: var(--lightGray-color);
 
     margin: 1rem;
     transition: all 0.3s ease-in-out;
@@ -91,14 +107,14 @@
     svg {
       width: 20px;
       height: 20px;
-      color: var(--secondary-color);
+      color: var(--blue-color);
     }
 
     &:hover {
       background-color: var(--secondary-color);
 
       svg {
-        color: var(--white-color);
+        color: var(--lightGray-color);
       }
     }
   }
