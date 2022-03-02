@@ -17,12 +17,12 @@ function About() {
 
   return (
     <>
-      <h2 className="head-text">
-        I know That
-        <span> Good Design </span>
+      <h2 id="about-title" className="head-text">
+        Reasons
+        <span> Why </span>
         <br />
-        means
-        <span> Good Business</span>
+        You should
+        <span> Hire Me</span>
       </h2>
       <div className={styles.app__profiles}>
         {abouts.map((about, index) => (
@@ -51,5 +51,5 @@ function About() {
 export default AppWrap(
   MotionWrap(About, 'app__about'),
   'about',
-  'app__whitebg',
+  'app__darkGraybg',
 );

@@ -3,8 +3,8 @@
   font-family: var(--font-base);
 }
 
-.app__whitebg {
-  background-color: var(--white-color);
+.app__darkGraybg {
+  background-color: var(--darkGray-color);
 }
 
 .app__primarybg {
@@ -56,8 +56,8 @@
   font-size: 2.75rem;
   font-weight: 900;
   text-align: center;
-  color: var(--black-color);
   text-transform: capitalize;
+  color: var(--lightGray-color);
 
   span {
     color: var(--secondary-color);
@@ -75,7 +75,6 @@
 .p-text {
   font-size: 0.8rem;
   text-align: left;
-  color: var(--gray-color);
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -86,7 +85,6 @@
 .bold-text {
   font-size: 1rem;
   font-weight: 900;
-  color: var(--black-color);
   text-align: left;
 
   @media screen and (min-width: 2000px) {
@@ -110,7 +108,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: var(--lightGray-color);
     margin: 0.25rem 0;
     border: 1px solid var(--lightGray-color);
 
@@ -123,7 +121,7 @@
     svg {
       width: 15px;
       height: 15px;
-      color: var(--gray-color);
+      color: var(--black-color);
     }
 
     &:hover {
@@ -131,7 +129,7 @@
       border-color: var(--secondary-color);
 
       svg {
-        color: var(--white-color);
+        color: var(--lightGray-color);
       }
     }
 

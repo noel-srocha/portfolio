@@ -42,12 +42,17 @@ function Work() {
   return (
     <>
       <h2 className="head-text">
-        My Creative
-        <span> Portfolio </span>
-        Section
+        See
+        <span> What I&apos;ve Done </span>
+        So Far
       </h2>
       <div className={styles.app__work_filter}>
-        {['UI/UX', 'Web App', 'Mobile App', 'React', 'All'].map((item, index) => (
+        {[
+          'Website', 'Web App', 'Mobile App',
+          'React', 'Vue', 'Flutter',
+          'REST API', 'Node.js',
+          'All',
+        ].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
